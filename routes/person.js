@@ -12,11 +12,11 @@ router.post('/addStudent', function(req, res) {
 });
 
 
-router.type('/endpoint', express.json({ type: '*/*' }), function(req, res) {
+router.type('/endpoint',express.json({ type: '*/*' }), function(req, res) {
     console.log('nombre: $ {req.body.nombre} apellido: ${req.body.apellido} data:JSON.stringify')
 });
 
 router.get('/testJson', function(req, res) {
     res.render('testJson');
 });
-module.express = router;
+module.exports =router;
